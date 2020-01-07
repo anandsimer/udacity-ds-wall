@@ -4,7 +4,7 @@ of the participants from the web page.
 """
 
 
-from bs4 import BeautifulSoup  # pip3 install beautiful4
+from bs4 import BeautifulSoup  # pip3 install beautifulsoup4
 import urllib3                 # pip3 install urllib3
 
 
@@ -83,7 +83,7 @@ class Scrap:
                     names.remove(name)
 
         print('Unique names on the wall:')
-        print(sorted(set(names)))
+        print(sorted(set(names)))  # remove all the duplicate entries and print list
         print(f'There are total {len(set(names))} unique names on the wall.')
 
     def main(self):
